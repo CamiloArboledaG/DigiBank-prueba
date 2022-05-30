@@ -1,0 +1,23 @@
+.contenedorTarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  background-color: rgb(243, 243, 243);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 10px 30px;
+}
+.titleHeader {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(60, 60, 60);
+  margin: 0px 15px;
+}
+.cotenedortitleHeader {
+  height: 100%;
+  max-height: 85px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  margin: 0px 30px ;
+}

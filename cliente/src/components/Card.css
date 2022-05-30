@@ -1,0 +1,60 @@
+.contenedorTarjeta {
+  width: 100%;
+  margin: 10px;
+  max-width: 300px;
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 16px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+  border: 1px solid rgb(233, 233, 233);
+  cursor: pointer;
+}
+.contenedorTarjeta:hover {
+  box-shadow: rgb(0 0 0 / 20%) 5px 5px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 2px 1px 0px, rgb(0 0 0 / 12%) 0px 4px 3px 0px;
+}
+
+.contenedorImagen {
+  width: 100%;
+}
+.imagen {
+  width: 100%;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+.contenedorInfo {
+  margin: 10px 15px;
+}
+.title {
+  margin: 7px 0px;
+  font-size: 20px;
+}
+.subtitle {
+  margin: 7px 0px;
+  font-size: 12px;
+  color: gray;
+}
+.Button {
+  width: 100%;
+  margin: 7px 0px;
+  padding: 5px;
+  border-radius: 25px;
+  border: 3px solid lightskyblue;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+  cursor: pointer;
+}
+.Button:hover {
+  background-color: lightskyblue;
+  color: white;
+}
+.Button:active {
+  background-color: lightskyblue;
+  color: white;
+  -webkit-box-shadow: inset 10px 10px 5px -8px rgba(128, 128, 128, 1);
+  -moz-box-shadow: inset 10px 10px 5px -8px rgba(128, 128, 128, 1);
+  box-shadow: inset 10px 10px 5px -8px rgba(128, 128, 128, 1);
+}
