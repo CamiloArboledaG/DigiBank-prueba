@@ -1,7 +1,7 @@
 .contenedorTarjeta {
   width: 100%;
   margin: 10px;
-  max-width: 300px;
+  max-width: 350px;
   background-color: rgb(255, 255, 255);
   color: rgba(0, 0, 0, 0.87);
   border-radius: 16px;
@@ -9,6 +9,7 @@
     rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
   border: 1px solid rgb(233, 233, 233);
   cursor: pointer;
+  display: flex;
 }
 .contenedorTarjeta:hover {
   box-shadow: rgb(0 0 0 / 20%) 5px 5px 1px -1px,
@@ -16,24 +17,40 @@
 }
 
 .contenedorImagen {
-  width: 100%;
+  width: 150px;
+  height: auto;
 }
 .imagen {
-  width: 100%;
-  height: 70px;
+  width: 150px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 15px 15px;
 }
 .contenedorInfo {
-  margin: 10px 15px;
+  width: 100%;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .title {
   margin: 7px 0px;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
 }
 .subtitle {
   margin: 7px 0px;
+  font-size: 14px;
+  font-weight: 500;
+  color: gray;
+  text-align: center;
+}
+.montoMax{
   font-size: 12px;
+  margin: 3px 0px;
+  text-align: center;
   color: gray;
 }
 .Button {

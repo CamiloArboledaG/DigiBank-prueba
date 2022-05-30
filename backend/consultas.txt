@@ -1,0 +1,11 @@
+SELECT * FROM producto INNER JOIN producto_prestamo ON producto.id =  producto_prestamo.id_producto INNER JOIN prestamo ON producto_prestamo.id_prestamo = prestamo.id
+
+
+Repite los los nombres, pero trae todo de producto y prestamo, (categoria, tipo_producto, segmento)
+SELECT * FROM producto INNER JOIN producto_prestamo ON producto.id =  producto_prestamo.id_producto 
+INNER JOIN prestamo ON producto_prestamo.id_prestamo = prestamo.id
+INNER JOIN producto_segmento ON producto.id = producto_segmento.id_producto
+INNER JOIN segmento ON producto_segmento.id_segmento = segmento.id
+INNER JOIN tipo_producto ON tipo_producto.id = producto.id_tipo_producto
+INNER JOIN producto_categoria ON producto.id = producto_categoria.id_producto
+INNER JOIN categoria ON producto_categoria.id_categoria = categoria.id;
