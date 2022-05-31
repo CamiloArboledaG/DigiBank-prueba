@@ -109,6 +109,29 @@ app.get("/categoria/:id", (req, res) => {
   });
 });
 
+// Put New Name in Producto
+
+app.post("/", (req, res) => {
+  pool.getConnection((err, connection) => {
+    if (err) {
+      res.json(err);
+    } else {
+      connection.query(
+        "UPDATE producto SET nombre=? WHERE id=?",
+        [req.body.nombre, req.body.id],
+        (err, rows) => {
+          if (err) {
+            res.json(err);
+          } else {
+            res.json(rows);
+          }
+        }
+      );
+    }
+  });
+});
+
+
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);

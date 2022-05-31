@@ -31,7 +31,6 @@ function App() {
         console.log(error);
       });
   }, []);
-  console.log(list);
   return (
     <Box sx={{ display: "flex" }}>
       <LeftMenu />
