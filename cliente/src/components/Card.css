@@ -54,7 +54,7 @@
   color: gray;
   text-align: center;
 }
-.montoMax{
+.montoMax {
   font-size: 12px;
   margin: 3px 0px;
   text-align: center;
@@ -82,11 +82,54 @@
   -moz-box-shadow: inset 10px 10px 5px -8px rgba(128, 128, 128, 1);
   box-shadow: inset 10px 10px 5px -8px rgba(128, 128, 128, 1);
 }
-.inputText{
+.inputText {
   width: 90%;
   margin: 7px 0px;
   padding: 10px;
   border-radius: 25px;
   border: 1px solid black;
   background-color: white;
+}
+.contenedorVentana {
+  width: 100%;
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.imagenVentana {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0px 0px 15px 15px;
+  display: flex;
+}
+.contenedorImagenVentana {
+  width: 100%;
+  height: 100%;
+}
+.contenedorInfoVentana {
+  margin: 10px 25px;
+}
+.ItemTitle {
+  font-size: 15px;
+  margin: 0px;
+}
+.item {
+  background-color: rgb(230, 230, 230);
+  margin: 5px;
+  padding: 5px 15px;
+  border-radius: 15px;
+  height: 25px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.contenedorItems {
+  display: flex;
+  align-items: center;
+}
+.divider {
+  border: none;
+  height: 2px;
+  background-color: rgb(185, 228, 255);
 }
